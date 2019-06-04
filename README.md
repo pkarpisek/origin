@@ -2,6 +2,10 @@
 _Brief description of what Origin is (3-5 sentences)_
 
 ## Table of Contents
+- [Certificates of Origin](#certificates-of-origin)
+- [How does it work](#how-does-it-work)
+- [Key modules and components](#key-modules-and-components)
+- [Where to start](#where-to-start)
 
 ## Certificates of Origin
 _Brieft description and links to learn more_
