@@ -28,14 +28,13 @@ This section lists key entry points to start your journey with Origin.
 
 ### Other components
 
-1. [ew-user-registry-lib](https://github.com/energywebfoundation/ew-user-registry-lib) - User registry and role management logic
-2. [ew-asset-registry-lib](https://github.com/energywebfoundation/ew-asset-registry-lib) - Consuming assets/Producing assets registry
-3. [ew-origin-lib](https://github.com/energywebfoundation/ew-origin-lib) - Contains Certificate and TradeableEntity logic, including registry of Certificate ownership
-4. [ew-market-lib](https://github.com/energywebfoundation/ew-market-lib/) - Market logic and contracts, including Demand storage
-5. [ew-market-matcher](https://github.com/energywebfoundation/ew-market-matcher) - Supply and Demand matching logic
-6. [ew-erc-test-contracts](https://github.com/energywebfoundation/ew-erc-test-contracts) - Test ERC token for demo purposes
-7. [ew-utils-general-lib](https://github.com/energywebfoundation/ew-utils-general-lib) - Contains logic for more straightforward interaction with contracts, such as watching events
-
+1. [ew-user-registry-lib](https://github.com/energywebfoundation/ew-user-registry-lib) - high-level library to interact with user registry. Can be used to i. a. create new user or set user's role in the system.
+2. [ew-asset-registry-lib](https://github.com/energywebfoundation/ew-asset-registry-lib) - high-level library for creating and managing electricity producing and consuming assets. Depends on [ew-user-registry-lib](https://github.com/energywebfoundation/ew-user-registry-lib), because only user with Asset Manager role can be owner of asset. 
+3. [ew-origin-lib](https://github.com/energywebfoundation/ew-origin-lib) - a heart of Origin systems, contains logic for storing and transferring Energy Attribute Certificates (as a form of unique [ERC721](http://erc721.org/) tokens). This library also has a more general construct called **TradeableEntity** that can be used to wrap, as name suggests, other tradeable entities, such as [Power Purchase Agreements](https://en.wikipedia.org/wiki/Power_purchase_agreement) or certificate bundles.
+4. [ew-market-lib](https://github.com/energywebfoundation/ew-market-lib/) - a library that allows to create demand (for buyers), supply (for sellers) and agreements between buyers and sellers.
+5. [ew-market-matcher](https://github.com/energywebfoundation/ew-market-matcher) - the most important part of marketplace, guarantees automatic matching of supply and demand between sellers and buyers. Matching rules can be highly customized and afterwards the algorithm can be tested by running matching simulator.
+6. [ew-erc-test-contracts](https://github.com/energywebfoundation/ew-erc-test-contracts) - Test ERC20 token for demo purposes, especially for doing an on-chain test purchase of a certificate using tokens
+7. [ew-utils-general-lib](https://github.com/energywebfoundation/ew-utils-general-lib) - Contains logic for more straightforward interaction with contracts, such as watching events. It is also a base layer for other libraries to build upon. It provides a foundation for things like off-chain data storage that is universal for all entities.
 
 ## Where to start
 _Explain where our demo is and what's the purpose of running a demo. Identify Origin team and ways how to connect with them_
