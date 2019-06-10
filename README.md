@@ -6,6 +6,7 @@ Origin is a set of toolkits that together provide a system for issuance and mana
 - [How does it work](#how-does-it-work)
 - [Key modules and components](#key-modules-and-components)
 - [Where to start](#where-to-start)
+- [Deployment](#deployment)
 
 ## Energy Attribute Certificates
 Energy Attribute Certificates, or EACs, is an official document which guarantees that produced energy comes from a renewable source. There are different standards that regulate how data is stored and validated. In Europe, this document is called Guarantee of Origin (GO), in North America, it's called Renewable Energy Certificate (REC), and in parts of Asia, Africa, the Middle East, and Latin America governing standard is International REC (I-REC). Standards do vary, but they all share the same core principles. 
@@ -38,3 +39,7 @@ This section lists key entry points to start your journey with Origin.
 
 ## Where to start
 _Explain where our demo is and what's the purpose of running a demo. Identify Origin team and ways how to connect with them_
+
+## Deployment
+
+For deployment instructions please refer to [Docker Deployment](https://github.com/energywebfoundation/origin/wiki/Docker-Deployment) wiki page.
